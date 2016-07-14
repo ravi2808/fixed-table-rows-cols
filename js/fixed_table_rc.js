@@ -57,7 +57,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 			$this.wrap('<div class="ft_container" />');
 			lc.ft_container = $this.parent().css({width: cfg.width, height: cfg.height});		
 			
-			var $ths = $('thead tr', $this).first().find('th');
+			var $ths = $('thead tr', $this).first().find('th').not(":hidden");
 			
 			if (cfg.sort && sorttable && cfg.fixedCols == 0) {				
 				$ths.addClass('fx_sort_bg');				
